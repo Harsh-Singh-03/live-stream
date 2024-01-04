@@ -51,7 +51,7 @@ const Actions = ({ isDashboard, user }: props) => {
             return (() => setUserData({ status: "authenticated", user: user }))
         }
 
-    })
+    },[])
 
     return (
         <div className="flex items-center justify-end gap-x-2">
