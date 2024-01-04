@@ -1,6 +1,5 @@
 import { getUserByUsername } from "@/lib/auth-service"
 import { notFound } from "next/navigation";
-import Action from "./_components/Action";
 import { isFollowingUser } from "@/lib/Follow-service";
 import { isBlockedByUser } from "@/lib/block-service";
 import { StreamPlayer } from "@/components/Stream-player";

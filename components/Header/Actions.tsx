@@ -44,13 +44,14 @@ const Actions = ({ isDashboard, user }: props) => {
         }
 
         if (userData.status !== 'authenticated' && isDashboard === false) {
-            fetchUserData()
+            return (() => fetchUserData())
+            
         }
         if (isDashboard === true && user) {
-            setUserData({ status: "authenticated", user: user })
+            return (() => setUserData({ status: "authenticated", user: user }))
         }
 
-    }, [isDashboard])
+    })
 
     return (
         <div className="flex items-center justify-end gap-x-2">

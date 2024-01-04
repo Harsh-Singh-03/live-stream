@@ -55,7 +55,7 @@ const Reqpass = () => {
                     {isLoad ? "Processing..." : 'Submit Request'}
                 </Button>
             </form>
-            <p className='text-gray-400 text-center text-sm'>Don't have an account? 
+            <p className='text-gray-400 text-center text-sm'>Don&apos;t have an account? 
                 <Button asChild variant='link' size='sm' className='text-muted-foreground h-auto' >
                     <Link href='/sign-up'>Create Account?</Link>
                 </Button>

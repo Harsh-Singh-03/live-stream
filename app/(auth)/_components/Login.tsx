@@ -72,7 +72,7 @@ const Login = () => {
                     <Link href='/reset-password-request'>Forget password?</Link>
                 </Button>
             </div>
-            <p className='text-gray-400 text-center text-sm'>Don't have an account? 
+            <p className='text-gray-400 text-center text-sm'>Don&apos;t have an account? 
                 <Button asChild variant='link' size='sm' className='text-muted-foreground h-auto' >
                     <Link href='/sign-up'>Create Account?</Link>
                 </Button>
