@@ -44,11 +44,10 @@ const Actions = ({ isDashboard, user }: props) => {
         }
 
         if (userData.status !== 'authenticated' && isDashboard === false) {
-            return (() => fetchUserData())
-            
+            fetchUserData()            
         }
         if (isDashboard === true && user) {
-            return (() => setUserData({ status: "authenticated", user: user }))
+            setUserData({ status: "authenticated", user: user })
         }
 
     },[])
